@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding: 0 16px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+select,
+input {
+  outline: none;
+  border: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}/*# sourceMappingURL=main.css.map */
