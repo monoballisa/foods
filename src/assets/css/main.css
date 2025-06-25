@@ -10,6 +10,10 @@
   padding: 0 16px;
 }
 
+body {
+  background-color: #f6f6f6;
+}
+
 button {
   border: none;
   cursor: pointer;
@@ -24,4 +28,705 @@ input {
 ul,
 ol {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.filters .filters_wrapper {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+.filters .filters_wrapper .btns {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  width: 95px;
+  height: 28px;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.order {
+  margin-bottom: 120px;
+}
+.order .oreder_wrapper .order_title {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  vertical-align: middle;
+  margin-bottom: 16px;
+  margin-top: 40px;
+}
+.order .oreder_wrapper .table_wrapper {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  height: 54px;
+  padding-top: 8px;
+  padding-left: 8px;
+  background-color: #fff;
+  padding-bottom: 8px;
+  border-radius: 16px;
+  margin-bottom: 8px;
+}
+.order .oreder_wrapper .table_wrapper button {
+  width: 38px;
+  height: 38px;
+  background-color: #F4CC46;
+  border-radius: 100px;
+}
+.order .oreder_wrapper .table_wrapper button img {
+  width: 24px;
+  height: 24px;
+}
+.order .oreder_wrapper .service_text {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  text-align: right;
+  padding-bottom: 8px;
+  color: #CCCCCC;
+}
+.order .orders_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  padding: 8px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  background: #fff;
+}
+.order .orders_main .order_imgs {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.order .orders_main .order_imgs img {
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
+}
+.order .orders_main .order_imgs .texts_column .name_order {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  vertical-align: middle;
+  padding-bottom: 6px;
+}
+.order .orders_main .order_imgs .texts_column .price_order {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  vertical-align: middle;
+}
+.order .orders_main .coin_counter {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  width: 80px;
+  height: 24px;
+  border-radius: 20px;
+  background: #F4CC46;
+  padding-left: 20px;
+}
+.order .orders_main .coin_counter button {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  vertical-align: middle;
+  background: none;
+}
+.order .orders_main .coin_counter span tton {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  vertical-align: middle;
+}
+.order .total_prise {
+  width: 100%;
+  margin-top: 8px;
+  height: 32px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  background-color: #fff;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+.order .order_more {
+  width: 100%;
+  height: 48px;
+  border-radius: 50px;
+  color: #fff;
+  background-color: #1A1A1A;
+}
+.order .add_again {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  vertical-align: middle;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.search-results {
+  margin-bottom: 70px;
+}
+.search-results .container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.search-results .search {
+  margin-bottom: 2rem;
+}
+.search-results .search_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.search-results .search-bar {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.search-results .search-bar input {
+  width: 100%;
+  padding: 0.75rem 2.5rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+.search-results .search-bar input:focus {
+  border-color: #F4CC46;
+  outline: none;
+}
+.search-results .search-bar .icon {
+  position: absolute;
+  font-size: 1.2rem;
+  color: #CCCCCC;
+  pointer-events: none;
+}
+.search-results .search-bar .icon.left {
+  left: 0.8rem;
+}
+.search-results .search-bar .icon.right {
+  right: 0.8rem;
+}
+.search-results .search .filter-btn-icon {
+  background: #F4CC46;
+  border: none;
+  border-radius: 50%;
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.search-results .search .filter-btn-icon .icon_filter {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.search-results .search .categorie_title {
+  font-family: "Nunito", sans-serif;
+  margin-top: 26px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  vertical-align: middle;
+}
+.search-results .search .filter_buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.search-results .search .filter_buttons .filter_btn {
+  width: 79px;
+  height: 36px;
+  border-radius: 999px;
+  background: #fff;
+  color: #1A1A1A;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+.search-results .search .filter_buttons .filter_btn:hover {
+  background: #fdf4d6;
+  border-color: #F4CC46;
+}
+.search-results .search .filter_buttons .filter_btn.active {
+  background: #F4CC46;
+  color: #fff;
+  border-color: #F4CC46;
+}
+.search-results .food_price {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  vertical-align: middle;
+}
+.search-results .double-search-container {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+.search-results .double-search-container input {
+  width: 100%;
+  height: 36px;
+  border-radius: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  padding: 8px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-align: center;
+  outline: none;
+}
+.search-results .double-search-container input:focus {
+  border-color: #f4c430;
+  box-shadow: 0 0 3px rgba(244, 196, 48, 0.7);
+}
+.search-results .results_list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+.search-results .results_list .result_item {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+.search-results .results_list .result_item .result_image {
+  width: 100%;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+.search-results .results_list .result_item p {
+  margin: 0.3rem 0;
+  font-weight: 500;
+  color: #1A1A1A;
+}
+.search-results .results_list .result_item span {
+  color: #1A1A1A;
+  font-size: 0.9rem;
+}
+
+.header {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.header .header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header_wrapper .logo_side {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.header .header_wrapper .logo_side .logo_text {
+  color: #1A1A1A;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+}
+.header .header_wrapper .card_logo {
+  font-size: 20px;
+  color: #1A1A1A;
+  cursor: pointer;
+}
+
+.hero {
+  padding: 20px 0;
+}
+.hero .hero_wrapper {
+  width: 100%;
+  height: 142px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 26px;
+}
+.hero .hero_wrapper .swiper {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+.hero .hero_wrapper .swiper-slide {
+  position: relative;
+}
+.hero .hero_wrapper .swiper-slide .slide-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.hero .hero_wrapper .swiper-slide .slide-content img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.hero .hero_wrapper .swiper-slide .slide-content .logo-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 74px;
+  height: 82px;
+}
+.hero .hero_wrapper .swiper-pagination {
+  bottom: 6px !important;
+  text-align: center;
+}
+.hero .hero_wrapper .swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 0.4;
+  width: 8px;
+  height: 8px;
+  margin: 0 4px;
+  transition: opacity 0.3s ease;
+}
+.hero .hero_wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: #fff;
+}
+.hero .search .search_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.hero .search .search_wrapper .search-bar {
+  width: 230px;
+  height: 42px;
+  border-radius: 50px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  padding: 10px;
+}
+.hero .search .search_wrapper .search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  margin: 0 8px;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: inherit;
+  color: #CCCCCC;
+}
+.hero .search .search_wrapper .search-bar .icon {
+  font-size: 24px;
+  color: #CCCCCC;
+}
+.hero .search .search_wrapper .search-bar .icon.left {
+  margin-right: 4px;
+}
+.hero .search .search_wrapper .search-bar .icon.right {
+  margin-left: 4px;
+}
+.hero .search .search_wrapper .search-bar .icon.voice-focus {
+  color: #F4CC46;
+  filter: drop-shadow(0 0 4px #F4CC46);
+}
+.hero .search .search_wrapper button {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  background-color: #f4c939;
+}
+.hero .search .search_wrapper button .icon_filter {
+  font-size: 18px;
+  color: #000000;
+}
+.hero .search .filter_buttons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.hero .search .filter_buttons .filter_btn {
+  color: #000000;
+  width: 95px;
+  height: 28px;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 12px;
+  background: #ffffff;
+}
+.hero .search .filter_buttons .filter_btn.active {
+  color: #F4CC46;
+}
+.hero .spinner {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  margin-right: 4px;
+  flex-shrink: 0;
+}
+.hero .spinner::before,
+.hero .spinner::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #f4c939;
+  border-color: #f4c939 transparent transparent transparent;
+  animation: spin 1s linear infinite;
+  filter: drop-shadow(0 0 4px #f4c939);
+}
+.hero .spinner::after {
+  animation-delay: -0.5s;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.search-results {
+  padding: 24px 0;
+}
+.search-results h2 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  color: #333;
+}
+.search-results p {
+  font-size: 14px;
+  color: #888;
+  margin-top: 10px;
+}
+.search-results .results_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+.search-results .result_item {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+.search-results .result_item img {
+  width: 100%;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+.search-results .result_item p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: #000;
+}
+.search-results .result_item span {
+  font-size: 13px;
+  color: #f4c939;
+  font-weight: 600;
+}
+
+.food {
+  margin-bottom: 150px;
+}
+.food .swiper {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.food .swiper-slide {
+  width: auto !important;
+}
+.food .food_card {
+  width: 124px;
+  height: 184px;
+  border-radius: 16px;
+  padding: 8px 8px 16px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.food .food_card .food_img {
+  width: 108px;
+  height: 108px;
+  border-radius: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.food .food_card .wrapper_texts {
+  padding-top: 18px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.food .food_card .wrapper_texts .food_texts .texts {
+  font-family: "Nunito", sans-serif;
+  padding-bottom: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+}
+.food .food_card .wrapper_texts .food_texts .price {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+}
+.food .food_card .wrapper_texts .btn {
+  width: 43px;
+  height: 34px;
+  border-radius: 100px;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #000;
+}
+
+.sidebar {
+  width: 90%;
+  height: 80px;
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  background: #ffffff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+.sidebar .sidebar_btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+  background: none;
+  border: none;
+  color: #CCCCCC;
+  text-decoration: none;
+}
+.sidebar .sidebar_btn .sidebar_icon {
+  font-size: 20px;
+  color: #CCCCCC;
+}
+.sidebar .sidebar_btn.active {
+  color: #1A1A1A;
+}
+.sidebar .sidebar_btn.active .sidebar_icon {
+  color: #1A1A1A;
+}
+
+.food {
+  margin-bottom: 150px;
+}
+.food .categories_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(124px, 1fr));
+  gap: 12px;
+}
+.food .food_card {
+  width: 124px;
+  height: 184px;
+  border-radius: 16px;
+  padding: 8px 8px 16px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.food .food_card .food_img {
+  width: 108px;
+  height: 108px;
+  border-radius: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.food .food_card .wrapper_texts {
+  padding-top: 18px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.food .food_card .wrapper_texts .food_texts .texts {
+  font-family: "Nunito", sans-serif;
+  padding-bottom: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+}
+.food .food_card .wrapper_texts .food_texts .price {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+}
+.food .food_card .wrapper_texts .btn {
+  width: 43px;
+  height: 34px;
+  border-radius: 100px;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #000;
 }/*# sourceMappingURL=main.css.map */

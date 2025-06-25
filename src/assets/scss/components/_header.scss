@@ -1,0 +1,35 @@
+.header {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+
+  .header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo_side {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      .logo_text {
+        color: $black;
+        font-family: $nunito;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        vertical-align: middle;
+      }
+    }
+
+    .card_logo{
+        font-size: 20px;
+        color: $black;
+        cursor: pointer;
+    }
+  }
+}
