@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
+import Sidebar from "./components/Sidebar/Sidebar";
 import Home from "./modules/Home/Home";
 import Categories from "./modules/Categories/Categories";
 import Orders from "./modules/Orders/Orders";
 import About from "./modules/AboutUs/AboutUs";
-import Sidebar from "./components/Sidebar/Sidebar";
-import Search from "./modules/Search/Search"
+import Search from "./modules/Search/Search";
 
 export default function App() {
   return (

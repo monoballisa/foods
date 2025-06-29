@@ -1,0 +1,75 @@
+.popular {
+  margin-bottom: 150px;
+
+  .swiper {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .swiper-slide {
+    width: auto !important;
+    height: 184px;
+  }
+
+  .food_cards {
+    width: 300px;
+    height: 174px;
+    border-radius: 16px;
+    padding: 8px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    box-sizing: border-box;
+
+    .foods_img {
+      width: 108px;
+      height: 108px;
+      border-radius: 16px;
+    }
+
+    .wrappers_texts {
+      width: 120px;
+      height: 81px;
+
+      .foods_texts {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        .texts {
+          font-family: $nunito;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 100%;
+          vertical-align: middle;
+        }
+
+        .prices {
+          width: 120px;
+          color: $gray;
+          font-family: $nunito;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 100%;
+          vertical-align: middle;
+        }
+      }
+
+      .parents_btn {
+        display: flex;
+        justify-content: flex-end;
+
+        .btns {
+          color: $white;
+          width: 38px;
+          height: 38px;
+          border-radius: 50px;
+          font-size: 24px;
+          background: $black;
+          margin-top: 11px;
+        }
+      }
+    }
+  }
+}

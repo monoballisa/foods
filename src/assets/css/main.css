@@ -582,7 +582,7 @@ a {
 }
 
 .food {
-  margin-bottom: 150px;
+  margin-bottom: 25px;
 }
 .food .swiper {
   display: flex;
@@ -591,6 +591,7 @@ a {
 }
 .food .swiper-slide {
   width: auto !important;
+  height: 184px;
 }
 .food .food_card {
   width: 124px;
@@ -612,8 +613,12 @@ a {
 .food .food_card .wrapper_texts {
   padding-top: 18px;
   display: flex;
-  gap: 12px;
+  justify-content: space-between;
   align-items: center;
+}
+.food .food_card .wrapper_texts .food_texts {
+  width: 79px;
+  height: 34px;
 }
 .food .food_card .wrapper_texts .food_texts .texts {
   font-family: "Nunito", sans-serif;
@@ -629,7 +634,7 @@ a {
   line-height: 100%;
 }
 .food .food_card .wrapper_texts .btn {
-  width: 43px;
+  width: 24px;
   height: 34px;
   border-radius: 100px;
   font-size: 20px;
@@ -729,4 +734,70 @@ a {
   font-size: 20px;
   color: #ffffff;
   background-color: #000;
+}
+
+.popular {
+  margin-bottom: 150px;
+}
+.popular .swiper {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.popular .swiper-slide {
+  width: auto !important;
+  height: 184px;
+}
+.popular .food_cards {
+  width: 300px;
+  height: 174px;
+  border-radius: 16px;
+  padding: 8px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  box-sizing: border-box;
+}
+.popular .food_cards .foods_img {
+  width: 108px;
+  height: 108px;
+  border-radius: 16px;
+}
+.popular .food_cards .wrappers_texts {
+  width: 120px;
+  height: 81px;
+}
+.popular .food_cards .wrappers_texts .foods_texts {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.popular .food_cards .wrappers_texts .foods_texts .texts {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  vertical-align: middle;
+}
+.popular .food_cards .wrappers_texts .foods_texts .prices {
+  width: 120px;
+  color: #CCCCCC;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  vertical-align: middle;
+}
+.popular .food_cards .wrappers_texts .parents_btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.popular .food_cards .wrappers_texts .parents_btn .btns {
+  color: #fff;
+  width: 38px;
+  height: 38px;
+  border-radius: 50px;
+  font-size: 24px;
+  background: #1A1A1A;
+  margin-top: 11px;
 }/*# sourceMappingURL=main.css.map */

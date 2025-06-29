@@ -1,5 +1,5 @@
 .food {
-  margin-bottom: 150px;
+  margin-bottom: 25px;
 
   .swiper {
     display: flex;
@@ -9,6 +9,7 @@
 
   .swiper-slide {
     width: auto !important;
+    height: 184px;
   }
 
   .food_card {
@@ -31,10 +32,13 @@
     .wrapper_texts {
       padding-top: 18px;
       display: flex;
-      gap: 12px;
+      justify-content: space-between;
       align-items: center;
 
       .food_texts {
+        width: 79px;
+        height: 34px;
+
         .texts {
           font-family: $nunito;
           padding-bottom: 8px;
@@ -52,7 +56,7 @@
       }
 
       .btn {
-        width: 43px;
+        width: 24px;
         height: 34px;
         border-radius: 100px;
         font-size: 20px;

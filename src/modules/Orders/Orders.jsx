@@ -1,17 +1,14 @@
-import { useState } from "react";
 import Restaurant from "../../assets/icons/restaurant.svg";
-import FoodsUl from "../../components/FoodsUl/FoodsUl";
+import Popular from "../../components/Popular/Popular";
+import { useOrderStore } from "../../store/orderStore";
 
 export default function Orders() {
-  const [count, setCount] = useState(1);
+  const { orders, decrement, increment } = useOrderStore();
 
-  const decrement = () => {
-    if (count > 1) setCount(count - 1);
-  };
-
-  const increment = () => {
-    setCount(count + 1);
-  };
+  const total = orders.reduce(
+    (sum, item) => sum + item.count * Number(item.price),
+    0
+  );
 
   return (
     <section className="order">
@@ -24,31 +21,35 @@ export default function Orders() {
             </button>
             <p className="table">Стол №1</p>
           </div>
-          <p className="service_text">За обслужевание 15%</p>
+          <p className="service_text">За обслуживание 15%</p>
         </div>
-        <div className="orders_main">
-          <div className="order_imgs">
-            <img
-              src="https://www.naijaloaded.com.ng/wp-content/uploads/2020/05/ojfh.jpg"
-              alt=""
-            />
-            <div className="texts_column">
-              <p className="name_order">Название</p>
-              <p className="price_order">200с</p>
+
+        {orders.map((order) => (
+          <div className="orders_main" key={order.id}>
+            <div className="order_imgs">
+              <img src={order.image} alt={order.name} />
+              <div className="texts_column">
+                <p className="name_order">{order.name}</p>
+                <p className="price_order">
+                  {Number(order.price) * order.count}с
+                </p>
+              </div>
+            </div>
+            <div className="coin_counter">
+              <button onClick={() => decrement(order.id)}>-</button>
+              <span>{String(order.count).padStart(2, "0")}</span>
+              <button onClick={() => increment(order.id)}>+</button>
             </div>
           </div>
-          <div className="coin_counter">
-            <button onClick={decrement}>-</button>
-            <span>{String(count).padStart(2, "0")}</span>
-            <button onClick={increment}>+</button>
-          </div>
-        </div>
+        ))}
+
         <button className="total_prise">
-          Итого <span>920c</span>
+          Итого <span>{total}с</span>
         </button>
         <button className="order_more">Заказать еще</button>
         <p className="add_again">Добавить еще</p>
-        <FoodsUl/>
+
+        <Popular onAddClick={useOrderStore((state) => state.addToOrder)} />
       </div>
     </section>
   );
